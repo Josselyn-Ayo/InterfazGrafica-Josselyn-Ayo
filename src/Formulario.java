@@ -38,12 +38,13 @@ public class Formulario extends JFrame {
         accion2Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String datos = "Nombre: " + NombreField.getText()
-                        + "\nApellido:" + ApellidoField2.getText()
-                        +"\nDireccion:" +DireccionField3.getText()
-                        + "\nTelefono:" +TelefonoField4.getText()
-                        +"\nAño de Nacimiento: "+ AñoNacimientoField5.getText()
-                        + "\nEstatura: "+ EstaturaField6.getText();
+                String datos = "<html>"+
+                        "\nNombre: " + NombreField.getText() +"<br>"
+                        + "\nApellido:" + ApellidoField2.getText()+"<br>"
+                        +"\nDireccion:" +DireccionField3.getText()+"<br>"
+                        + "\nTelefono:" +TelefonoField4.getText()+"<br>"
+                        +"\nAño de Nacimiento: "+ AñoNacimientoField5.getText()+"<br>"
+                        + "\nEstatura: "+ EstaturaField6.getText()+"<br>";
                 resultadoLabel.setText(datos);
 
             }
